@@ -17,16 +17,16 @@ header {
     width: 150px;
     height: 100%;
     padding: 1rem;
+    transition: .5s transfom;
     
 }
 
 header.open {
-    right: 0;
+    transform: translateX(-100%);
 }
 
 header span {
     color: bisque;
-    margin-bottom: 1rem;
 }
 
 header nav {
@@ -38,4 +38,17 @@ header nav a {
     color: rgba(29, 69, 231, 0.558);
     text-decoration: none;
     margin: 0.5rem 0;
+}
+
+@media only screen and (min-width: 768px) {
+    #menu {
+        display: none;
+    }
+    header {
+        position: sticky;
+        left: 0;
+        right: 0;
+        width: 100%;
+    }
+     
 }
