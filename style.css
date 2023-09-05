@@ -150,22 +150,21 @@ body {
   /* navbar */
 }
 header {
-    position: fixed;
-    background-color: rgb(10, 158, 158);
-    right: -150px;
-    width: 150px;
-    height: 100%;
-    padding: 1rem;
-    transition: .5s transfom;
-    
+  position: fixed;
+  background-color: rgb(10, 158, 158);
+  right: -150px;
+  width: 150px;
+  height: 100%;
+  padding: 1rem;
+  transition: 0.5s transfom;
 }
 
 header.open {
-    transform: translateX(-100%);
+  transform: translateX(-100%);
 }
 
 header span {
-    color: bisque;
+  color: bisque;
 }
 
 header nav {
@@ -173,21 +172,20 @@ header nav {
 }
 
 header nav a {
-    display: block;
-    color: rgba(29, 69, 231, 0.558);
-    text-decoration: none;
-    margin: 0.5rem 0;
+  display: block;
+  color: rgba(29, 69, 231, 0.558);
+  text-decoration: none;
+  margin: 0.5rem 0;
 }
 
 @media only screen and (min-width: 768px) {
-    #menu {
-        display: none;
-    }
-    header {
-        position: sticky;
-        left: 0;
-        right: 0;
-        width: 100%;
-    }
-     
+  #menu {
+    display: none;
+  }
+  header {
+    position: sticky;
+    left: 0;
+    right: 0;
+    width: 100%;
+  }
 }
