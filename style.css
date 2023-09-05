@@ -72,9 +72,7 @@ body {
   box-shadow: none;
   width: 100%;
 }
-.wrapper .form-group input:focus {
-  outline: none;
-}
+
 .wrapper .form-group input::placeholder {
   color: var(--black-color);
   font-weight: 400;
@@ -134,7 +132,7 @@ body {
 @media (max-width: 1030px) {
   .wrapper::before {
     left: -25%;
-    min-height: 60vh;
+    min-height: vh;
     height: 500px;
   }
 }
